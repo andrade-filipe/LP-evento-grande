@@ -142,12 +142,14 @@ EVENT DETAILS
 }
 
 @media (max-width: 768px) {
-    .event-details__info:nth-child(1) {
-        margin-top: 15%;
+    :root {
+        --fs-biggerscreen: var(--fs-large);
+        --fs-xlarge: var(--fs-large);
+        --fs-large: 1.75rem;
     }
 
-    .hero__title {
-        font-size: var(--fs-xlarge);
+    .event-details__info:nth-child(1) {
+        margin-top: 15%;
     }
 }
 /*-------------------
